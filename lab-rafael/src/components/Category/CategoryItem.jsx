@@ -26,7 +26,6 @@ class CategoryItem extends React.Component {
   }
 
   finishEdit(category) {
-    console.log('new state from item', category);
     this.props.updateCategory(category);
     this.toggleEdit();
   }
@@ -46,7 +45,7 @@ class CategoryItem extends React.Component {
         {this.props.number}
         <button onClick={this.handleDestroy}>delete</button>
         <button onClick={this.toggleEdit}>Update</button>
-        <ExpenseForm />
+        <ExpenseForm action="create" buttonText="Create"/>
         <ExpenseList />
       </li>
   }

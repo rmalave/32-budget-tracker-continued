@@ -27,7 +27,6 @@ class ConnectedList extends React.Component {
   }
 
   handleUpdate(category) {
-    console.log('new state from list', category);
     this.props.updateCategory(category);
   }
 
